@@ -1,5 +1,1 @@
-# dwmblocks
-Modular status bar for dwm written in c.
-# modifying blocks
-The statusbar is made from text output from commandline programs.
-Blocks are added and removed by editing the blocks.h header file.
+Artur's build of dwmblocks, modular statusbar for dwm written in C.
