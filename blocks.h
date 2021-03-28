@@ -8,7 +8,6 @@ static const Block blocks[] = {
 	{"",		"statusbar-disk",		5,			16},
 	{"",		"statusbar-memory",		2,			14},
 	{"",		"statusbar-battery",		2,			6},
-	{"",		"statusbar-lowbat",		300,			18},
 	{"",		"statusbar-feed",		0,			15},
 	{"",		"statusbar-updates",		0,			2},
 	{"",		"statusbar-brightness",		0,			11},
