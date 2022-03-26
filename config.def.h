@@ -2,7 +2,7 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
         {"", "statusbar-feed",		0, 7},
-        {"", "statusbar-memory",	0, 6},
+        {"", "statusbar-cputemp",	0, 6},
         {"", "statusbar-memory",	0, 5},
 	{"", "statusbar-disk",		0, 4},
 	{"", "statusbar-battery",	0, 3},
