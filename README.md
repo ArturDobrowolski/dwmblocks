@@ -1,15 +1,21 @@
-# dwmblocks
-Modular status bar for dwm written in c.
-# usage
-To use dwmblocks first run 'make' and then install it with 'sudo make install'.
-After that you can put dwmblocks in your xinitrc or other startup script to have it start with dwm.
-# modifying blocks
-The statusbar is made from text output from commandline programs.
-Blocks are added and removed by editing the blocks.h header file.
-By default the blocks.h header file is created the first time you run make which copies the default config from blocks.def.h.
-This is so you can edit your status bar commands and they will not get overwritten in a future update.
-# patches
-Here are some patches to dwmblocks that add features that I either don't want to merge in, or that require a dwm patch to work.
-I do not maintain these but I will take pull requests to update them.
-<br>
-<a href=https://gist.github.com/IGeraGera/e4a5583b91b3eec2e81fdceb44dea717>dwmblocks-statuscmd-b6b0be4.diff</a>
+# Artur's build of dwmblocks
+
+Originally forked from [torrinfail](https://github.com/torrinfail/dwmblocks) dwmblocks is a modular statusbar for dwm.
+
+My build includes several changes:
+1. The statuscmd patch has been applied which allows dwmblocks to communicate with dwm. With the use of `$BUTTON` variable the patch allows you to run custom task triggered eg. by mouse button click.
+2. Configuration files are now renamed to more suckless-like convention.
+3. Unused variables have been removed.
+
+## Installation
+To install dwmblocks simply run:
+```
+make clean install
+```
+
+## Running dwmblocks
+Invoke the `dwmblocks` command.
+
+## Additional info
+Please note that in order to make a full use of my dwmblocks build you also need to clone my statusbar [scripts](https://github.com/arturdobrowolski/scripts). These scripts must reside inside system PATH.
+
